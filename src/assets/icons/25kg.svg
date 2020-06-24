@@ -1,0 +1,19 @@
+<svg width="37" height="36" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter x="-11.4%" y="-11.8%" width="122.9%" height="123.5%" filterUnits="objectBoundingBox" id="a">
+      <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation=".5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.162423514 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#a)" fill="none" fill-rule="evenodd">
+    <ellipse stroke="#F2F2FF" fill="#FB251C" cx="17.5" cy="17" rx="17" ry="16.5"/>
+    <text font-family="RobotoMono-Regular, Roboto Mono" font-size="16" fill="#F2F2FF">
+      <tspan x="8" y="23">25</tspan>
+    </text>
+  </g>
+</svg>

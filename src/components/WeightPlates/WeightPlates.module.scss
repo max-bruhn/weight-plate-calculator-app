@@ -1,0 +1,24 @@
+.scale {
+  transform: scale(0.66);
+}
+
+// md
+@media (min-width: 768px) {
+  .scale {
+    transform: scale(0.78);
+  }
+}
+
+// lg
+@media (min-width: 1024px) {
+  .scale {
+    transform: scale(0.88);
+  }
+}
+
+// xl
+@media (min-width: 1280px) {
+  .scale {
+    transform: scale(1);
+  }
+}

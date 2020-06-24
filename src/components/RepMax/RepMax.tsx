@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
+import WeightPlates from '../WeightPlates/WeightPlates';
 
 interface Props {}
 
 const RepMax: React.FC<Props> = () => {
+  let color = 2;
   return (
     <>
       <div className=" mt-6  ">
@@ -19,8 +21,13 @@ const RepMax: React.FC<Props> = () => {
             </div>
             <div className="w-full md:w-3/4 float-right">
               <span className="text-lightAccent mr-6 block md:inline text-xs">PLATES (PER SIDE)</span>
-
-              <span className="text-light block md:inline">20 kg × 1 - 10 kg × 1 - 1.25 kg × 1 - 1.25 kg × 1</span>
+              <span className="text-light block md:inline">
+                <span className="mr-1 ml-2">1 ×</span>
+                <WeightPlates amount={1} plate={25} />
+                <span className="mr-1 ml-2">1 ×</span>
+                <WeightPlates amount={2} plate={20} />
+              </span>
+              {/* <span className="text-light block md:inline">20 kg × 1 - 10 kg × 1 - 1.25 kg × 1 - 1.25 kg × 1</span> */}
             </div>
           </div>
         </div>
